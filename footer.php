@@ -96,7 +96,7 @@ if (!$hideFooter) { ?>
                     <p>15C đường Cao Thắng, phường 2, quận 3, TPHCM</p>
                     <p>Tel: <a href="tel:02838327986">(028) 38.32.79.86</a></p>
                     <p>Hotline: <a href="tel:0911470606">0911 47 0606</a></p>
-                    <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
+                    <p>Email: <a href="mailto:shirley@duhocuoe.edu.vn">shirley@duhocuoe.edu.vn</a></p>
                     <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0934155606" target="_blank">0934155606</a>
                     </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0934155606" target="_blank">0934155606</a></p>
@@ -105,7 +105,7 @@ if (!$hideFooter) { ?>
                     <h3>Văn phòng TP. Hồ Chí Minh</h3>
                     <p>Tòa nhà La Bonita, 215 Nguyễn Gia Trí, phường 25, quận Bình Thạnh, TPHCM</p>
                     <p>Hotline: <a href="tel:0911750606">0911 75 0606</a></p>
-                    <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
+                    <p>Email: <a href="mailto:shirley@duhocuoe.edu.vn">shirley@duhocuoe.edu.vn</a></p>
                     <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0941579922" target="_blank">0941579922</a>
                     </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0941579922" target="_blank">0941579922</a></p>
@@ -114,7 +114,7 @@ if (!$hideFooter) { ?>
                     <h3>VĂN PHÒNG ĐẠI DIỆN TẠI ĐÀI LOAN</h3>
                     <p>No.62-1, Shimen Rd, Tucheng Dist., New Taipei City 236, Taiwan Mr. Yen, Kai Cheng (Cris)</p>
                     <p>Hotline: <a href="tel:+886912885890">+886 912 885 890</a></p>
-                    <p>Email: <a href="mailto:manager@duhocuoe.edu.vn">manager@duhocuoe.edu.vn</a></p>
+                    <p>Email: <a href="mailto:shirley@duhocuoe.edu.vn">shirley@duhocuoe.edu.vn</a></p>
                 </div>
             </div>
         </div>
