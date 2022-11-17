@@ -1,0 +1,73 @@
+section.posts-popular {
+  padding-bottom: 20px;
+}
+section.posts-popular .swiper-3d .swiper-slide-shadow-left, section.posts-popular .swiper-slide-shadow-right {
+  background-image: unset;
+}
+section.posts-popular .post-container .post-title {
+  text-align: center;
+  color: #505050;
+}
+
+.btn-read-more {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-read-more.bg-blue {
+  background-color: #20789E;
+  color: white;
+}
+
+section .section-title {
+  color: #20789E;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.swiper-posts-popular .swiper-slide {
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  background: unset;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.swiper-posts-popular .posts-popular-pagination {
+  text-align: center;
+}
+
+.swiper-event {
+  position: relative;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.posts-event-button-next:after, .posts-event-button-prev:after {
+  color: black;
+  background-color: #d5d5d5;
+  padding: 15px 20px 15px 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 11px;
+}

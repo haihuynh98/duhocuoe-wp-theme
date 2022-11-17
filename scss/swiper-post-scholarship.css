@@ -1,0 +1,85 @@
+@charset "UTF-8";
+section.posts-scholarship {
+  padding-bottom: 20px;
+  background-color: #77aad9;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), to(#77aad9));
+  background-image: linear-gradient(white, white, #77aad9);
+}
+
+section .section-title {
+  color: #20789E;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.posts-scholarship-button-next:after, .posts-scholarship-button-prev:after {
+  color: black;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .posts-scholarship-button-next:after, .posts-scholarship-button-prev:after {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .posts-scholarship-button-next:after, .posts-scholarship-button-prev:after {
+    font-size: 15px;
+  }
+}
+
+.swiper-posts-scholarship .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: unset;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.swiper-posts-scholarship .swiper-slide a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+.swiper-posts-scholarship .posts-scholarship-pagination {
+  text-align: center;
+}
+
+.post-container {
+  padding: 15px 15px 30px 15px;
+  background-clip: padding-box;
+  /* !importanté */
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  text-align: left;
+  background-color: white;
+}
+.post-container .post-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.post-container p {
+  font-size: 16px;
+}
+.post-container p.public-at {
+  display: block;
+  margin: auto 0px 0px 0px;
+  position: absolute;
+  bottom: 10px;
+}
+.post-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

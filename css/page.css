@@ -1,0 +1,254 @@
+#content article .title-page {
+  color: #20789E;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+#content .content-container .content img {
+  max-width: 100%;
+}
+
+body {
+  margin-top: 40px;
+}
+
+.scrollbar {
+  overflow-y: scroll !important;
+  /* width */
+  /* Track */
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+#sidebar-posts-list .sidebar.widget {
+  margin-bottom: 0px;
+}
+#sidebar-posts-list .sidebar.widget > ul {
+  max-height: 350px;
+}
+
+#sidebar-posts-popular, #sidebar-posts-list {
+  margin-top: 20px;
+}
+#sidebar-posts-popular a, #sidebar-posts-list a {
+  color: #202020;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+}
+#sidebar-posts-popular a:hover, #sidebar-posts-list a:hover {
+  color: #2996bd;
+}
+#sidebar-posts-popular ul, #sidebar-posts-list ul {
+  list-style: none;
+}
+#sidebar-posts-popular li, #sidebar-posts-list li {
+  list-style: none;
+}
+#sidebar-posts-popular h5, #sidebar-posts-list h5 {
+  margin: 0;
+}
+#sidebar-posts-popular h3, #sidebar-posts-list h3 {
+  color: #2996bd;
+  margin: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-left: 3px solid #32aae1;
+  font-size: 26px;
+}
+#sidebar-posts-popular .sidebar.widget, #sidebar-posts-list .sidebar.widget {
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  padding-right: 0px;
+}
+#sidebar-posts-popular .sidebar.widget ul, #sidebar-posts-list .sidebar.widget ul {
+  margin: 0 20px;
+  padding: 0;
+  overflow: hidden;
+}
+#sidebar-posts-popular .sidebar.widget ul li, #sidebar-posts-list .sidebar.widget ul li {
+  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 20px;
+}
+#sidebar-posts-popular .sidebar.widget ul li:last-child, #sidebar-posts-list .sidebar.widget ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+#sidebar-posts-popular .sidebar-thumb, #sidebar-posts-list .sidebar-thumb {
+  float: left;
+  overflow: hidden;
+  margin-right: 15px;
+}
+#sidebar-posts-popular .sidebar-thumb img, #sidebar-posts-list .sidebar-thumb img {
+  background: #fff;
+  border: 1px dashed #e0e0e0;
+  padding: 6px;
+  height: 75px;
+  width: 75px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+#sidebar-posts-popular .sidebar-content, #sidebar-posts-list .sidebar-content {
+  height: 75px;
+}
+#sidebar-posts-popular .sidebar-content h5, #sidebar-posts-list .sidebar-content h5 {
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 24px;
+}
+#sidebar-posts-popular .sidebar-content h5 a, #sidebar-posts-list .sidebar-content h5 a {
+  color: #202020;
+  outline: 0 none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+#sidebar-posts-popular .sidebar-content h5 a:hover, #sidebar-posts-list .sidebar-content h5 a:hover {
+  color: #2996bd;
+}
+#sidebar-posts-popular .sidebar-meta, #sidebar-posts-list .sidebar-meta {
+  margin-top: 10px;
+}
+#sidebar-posts-popular .sidebar-meta span, #sidebar-posts-list .sidebar-meta span {
+  color: #2e2e2e;
+}
+#sidebar-posts-popular .sidebar-meta span i, #sidebar-posts-list .sidebar-meta span i {
+  color: #2996bd;
+}
+#sidebar-posts-popular .sidebar-meta span.time, #sidebar-posts-list .sidebar-meta span.time {
+  margin-right: 10px;
+}
+
+.breadcrumb-container {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #297FA6;
+  color: white;
+  font-size: 14px;
+}
+.breadcrumb-container p {
+  margin: 0px !important;
+}
+.breadcrumb-container a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.breadcrumb-container .breadcrumb_last {
+  font-style: italic;
+}
+
+.tab-schools-majors {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+}
+.tab-schools-majors ul.nav-tabs {
+  margin: 0px;
+}
+.tab-schools-majors ul.nav-tabs li {
+  flex: 50%;
+}
+.tab-schools-majors ul.nav-tabs a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  background-color: #ffffff;
+}
+.tab-schools-majors ul.nav-tabs a.active {
+  background-color: #f2f2f2;
+}
+.tab-schools-majors .tab-content {
+  width: 100%;
+}
+.tab-schools-majors .tab-content ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  max-height: 350px;
+}
+.tab-schools-majors .tab-content ul li {
+  width: 100%;
+}
+.tab-schools-majors .tab-content ul li a {
+  padding: 10px 10px 0 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+}
+.tab-schools-majors .tab-content ul li a:hover {
+  background-color: white;
+}
+.tab-schools-majors .tab-content ul li:last-child a {
+  padding: 10px 10px 10px 10px;
+}
+
+.related-post .row-related-post a {
+  text-decoration: none;
+}
+.related-post .row-related-post .item-related-post {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .related-post .row-related-post .item-related-post {
+    margin-top: 0px;
+  }
+}
+.related-post .row-related-post .item-related-post img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .related-post .row-related-post .item-related-post img {
+    height: 150px;
+  }
+}
+.related-post .row-related-post .item-related-post .post-title {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .related-post .row-related-post .item-related-post .post-title {
+    margin-top: 10px;
+  }
+}
+.related-post .row-related-post .item-related-post .description {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.related-post .row-related-post .item-related-post .post-title, .related-post .row-related-post .item-related-post .description {
+  color: blue;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.related-post .row-related-post .item-related-post .post-title:hover, .related-post .row-related-post .item-related-post .description:hover {
+  color: red;
+}
+
+#sidebar-banner-vertical .image-banner img, .sidebar-banner-vertical .image-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=page.css.map */

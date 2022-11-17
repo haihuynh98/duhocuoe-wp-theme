@@ -1,0 +1,22 @@
+section.footer-form form.advise-form input {
+  width: 100%;
+  background-color: #E1E2E3;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+}
+section.footer-form form.advise-form input::-webkit-input-placeholder {
+  color: black;
+}
+section.footer-form form.advise-form input::-moz-placeholder {
+  color: black;
+}
+section.footer-form form.advise-form input:-ms-input-placeholder {
+  color: black;
+}
+section.footer-form form.advise-form input::-ms-input-placeholder {
+  color: black;
+}
+section.footer-form form.advise-form input::placeholder {
+  color: black;
+}

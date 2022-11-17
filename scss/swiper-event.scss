@@ -1,0 +1,14 @@
+section.post-event {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+
+  .col-left, .section-title {
+    text-align: left;
+
+    @media screen and (max-width: 768px){
+      text-align: center;
+    }
+  }
+}
+
