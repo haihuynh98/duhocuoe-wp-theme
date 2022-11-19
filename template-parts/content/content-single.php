@@ -47,8 +47,37 @@ if ($countryID != 0) {
                     );
 
                     ?>
+
+                    <section class="tags-single">
+                        <div class="title-container sub-title down-line">
+                            <div class="title-section">
+                                <h2>Từ khóa thể thao</h2>
+                            </div>
+                        </div>
+                        <div class="list-tag">
+                            <ul>
+                                <?php
+                                $tags = get_tags();
+                                if ($tags):
+                                    $tagListNum = 1;
+                                    foreach ($tags as $tag) :
+                                        if ($tagListNum > 10) {
+                                            break;
+                                        }
+
+                                        $tag_link = get_tag_link($tag->term_id);
+                                        $tag_name = $tag->name;
+
+                                        echo "<li><a href='" . $tag_link . "'>" . $tag_name . "</a></li>";
+                                        $tagListNum++;
+                                    endforeach;
+                                endif;?>
+                            </ul>
+                        </div>
+                    </section>
+
                 </div><!-- .entry-content -->
-                <?php example_cats_related_post() ?>
+
 
             </div>
             <div class="col-lg-3 col-12 sidebar-post">
@@ -58,6 +87,7 @@ if ($countryID != 0) {
                 <?php echo get_template_part('template-parts/sidebar/sidebar-banner-vertical'); ?>
             </div>
         </div>
+        <?php example_cats_related_post() ?>
     </div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -257,6 +257,11 @@ body {
 }
 
 .related-post {
+  .title {
+    h3 {
+      font-size: 25px;
+    }
+  }
   .row-related-post {
     a {
       text-decoration: none;
@@ -314,6 +319,15 @@ body {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+.tags-single {
+  .title-section {
+    h2 {
+      text-transform: uppercase;
+      font-size: 25px;
     }
   }
 }

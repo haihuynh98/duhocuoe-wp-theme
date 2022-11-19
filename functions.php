@@ -1408,7 +1408,7 @@ function example_cats_related_post()
         'category__in' => $cat_ids,
         'post_type' => $current_post_type,
         'post__not_in' => array($post_id),
-        'posts_per_page' => '3',
+        'posts_per_page' => '6',
     );
 
     $related_cats_post = new WP_Query($query_args);
@@ -1422,7 +1422,7 @@ function example_cats_related_post()
             <div class="row row-related-post">
                 <?php
                 while ($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
-                    <div class="col-md-4 col-12">
+                    <div class="col-md-2 col-12">
                         <a href="<?php the_permalink(); ?>">
 
                             <div class="row item-related-post">
