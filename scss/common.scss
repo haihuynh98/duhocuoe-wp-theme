@@ -848,6 +848,7 @@ ul.page-numbers {
 
       .date {
         font-size: 13px;
+        color: #bdbdbd;
       }
 
       .title-post {
@@ -858,6 +859,12 @@ ul.page-numbers {
 
       .description {
         font-size: 14px;
+        color: #bdbdbd;
+      }
+
+      .date, .title-post, .description {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
       }
     }
   }

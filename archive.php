@@ -52,7 +52,7 @@ if ($countryID != 0) {
                                                  onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"/>
                                             <div class="overlay-content">
                                                 <p class="date"><?= get_the_date('d.m.Y', $trendingPost)?></p>
-                                                <h2 class="title-post"><?= get_the_title($trendingPost) ?></h2>
+                                                <h2 class="title-post text-overflow-3-line"><?= get_the_title($trendingPost) ?></h2>
                                                 <p class="description text-overflow-4-line archive-description"><?= get_the_excerpt($trendingPost) ?></p>
                                                 <a class="btn btn-read-more bg-blue" type="button"
                                                    href="<?= get_permalink($trendingPost) ?>"
@@ -80,7 +80,7 @@ if ($countryID != 0) {
                                                  onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"/>
                                                 <div class="overlay-content">
                                                     <p class="date"><?= get_the_date('d.m.Y')?></p>
-                                                    <h2 class="title-post"><?= get_the_title() ?></h2>
+                                                    <h2 class="title-post text-overflow-3-line"><?= get_the_title() ?></h2>
                                                     <p class="description text-overflow-4-line archive-description"><?= get_the_excerpt() ?></p>
                                                     <a class="btn btn-read-more bg-blue" type="button"
                                                        href="<?= get_permalink(get_the_ID()) ?>"

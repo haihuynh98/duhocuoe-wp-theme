@@ -811,6 +811,7 @@ ul.page-numbers li span p {
 }
 .archive .top-content .overlay-content .date {
   font-size: 13px;
+  color: #bdbdbd;
 }
 .archive .top-content .overlay-content .title-post {
   font-size: 18px;
@@ -819,6 +820,11 @@ ul.page-numbers li span p {
 }
 .archive .top-content .overlay-content .description {
   font-size: 14px;
+  color: #bdbdbd;
+}
+.archive .top-content .overlay-content .date, .archive .top-content .overlay-content .title-post, .archive .top-content .overlay-content .description {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .btn.btn-read-more {
