@@ -1427,7 +1427,7 @@ function example_cats_related_post()
 
                             <div class="row item-related-post">
                                 <div class="col-md-12 col-5">
-                                    <img class="" src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
+                                    <img class="" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') ?>"
                                          onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
                                          alt="<?= get_the_title()?>">
                                 </div>
