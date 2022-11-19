@@ -829,6 +829,38 @@ ul.page-numbers {
   .name {
     min-height: 58px;
   }
+
+  .top-content {
+    position: relative;
+
+    .overlay-content {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(42, 42, 42, 0.7);
+      padding: 20px;
+      width: 50%;
+
+      a {
+        text-decoration: none;
+      }
+
+      .date {
+        font-size: 13px;
+      }
+
+      .title-post {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 

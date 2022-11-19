@@ -44,11 +44,11 @@ if (!$hideFooter) { ?>
                             </div>
                             <div class="col-12 text-center">
                                 <?php if (!isset($_GET['success'])): ?>
-                                    <button class="g-recaptcha"
+                                    <button class="btn btn-submit submit g-recaptcha"
                                             data-sitekey="6LfaYe8iAAAAAJ1nPyyPs1hPtFb0io2iWjEG30VF"
                                             data-callback='onSubmit'
                                             data-action='submit'
-                                            type="submit" class="btn btn-submit submit" name="send-message" value="Gửi">Gửi</button>
+                                            type="submit" name="send-message" value="Gửi">Gửi</button>
 
                                 <?php endif; ?>
                             </div>

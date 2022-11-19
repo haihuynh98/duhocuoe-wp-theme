@@ -129,7 +129,8 @@ function update_category_image($term, $taxonomy)
             <br>
             <?php $direct_link = get_term_meta($term->term_id, 'direct_link', true); ?>
             <p>Direct link (option)</p>
-            <input type="text" name="direct_link" id="direct_link" pattern="https?://.*" placeholder="Enter a link" value="<?= $direct_link?>">
+            <input type="text" name="direct_link" id="direct_link" pattern="https?://.*" placeholder="Enter a link"
+                   value="<?= $direct_link ?>">
             <p class="description">The link must be with format of 'https' or 'http'</p>
 
             </div></td>
@@ -267,4 +268,41 @@ function add_custom_script()
                 }
             });
         });</script> <?php
+}
+
+add_action('category_edit_form_fields', 'udpate_category_trending_post', 10, 2);
+function udpate_category_trending_post($term, $taxonomy)
+{
+    $args = array('cat' => $term->term_id, 'orderby' => 'post_date', 'order' => 'DESC', 'posts_per_page' => -1, 'post_status' => 'publish');
+    query_posts($args);
+    $trendingPost = get_term_meta($term->term_id, 'trending_post', true);
+    ?>
+    <tr class="form-field term-group-wrap">
+        <th scope="row">
+            <label for="trending_post"><?php _e('Trending post', 'text-domain'); ?></label>
+        </th>
+        <td>
+
+            <select name="trending_post" id="trending_post" class="postform">
+                <option>None</option>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <option value="<?= get_the_ID() ?>" <?= $trendingPost == get_the_ID() ? 'selected' : '' ?>><?= get_the_title() ?></option>
+                <?php endwhile; endif; ?>
+            </select>
+        </td>
+    </tr>
+    <?php
+}
+
+add_action('edited_category', 'udpated_category_trending_post', 10, 2);
+function udpated_category_trending_post($term_id, $tt_id)
+{
+    if (isset($_POST['trending_post']) && '' !== $_POST['trending_post']) {
+        $image = $_POST['trending_post'];
+        update_term_meta($term_id, 'trending_post', $image);
+    } else {
+        update_term_meta($term_id, 'trending_post', '');
+    }
+
+
 }

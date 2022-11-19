@@ -794,6 +794,32 @@ ul.page-numbers li span p {
 .archive .name {
   min-height: 58px;
 }
+.archive .top-content {
+  position: relative;
+}
+.archive .top-content .overlay-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(42, 42, 42, 0.7);
+  padding: 20px;
+  width: 50%;
+}
+.archive .top-content .overlay-content a {
+  text-decoration: none;
+}
+.archive .top-content .overlay-content .date {
+  font-size: 13px;
+}
+.archive .top-content .overlay-content .title-post {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.archive .top-content .overlay-content .description {
+  font-size: 14px;
+}
 
 .btn.btn-read-more {
   padding: 10px 30px;
