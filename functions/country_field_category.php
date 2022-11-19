@@ -284,7 +284,7 @@ function udpate_category_trending_post($term, $taxonomy)
         <td>
 
             <select name="trending_post" id="trending_post" class="postform">
-                <option>None</option>
+                <option value="">None</option>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <option value="<?= get_the_ID() ?>" <?= $trendingPost == get_the_ID() ? 'selected' : '' ?>><?= get_the_title() ?></option>
                 <?php endwhile; endif; ?>
@@ -298,8 +298,8 @@ add_action('edited_category', 'udpated_category_trending_post', 10, 2);
 function udpated_category_trending_post($term_id, $tt_id)
 {
     if (isset($_POST['trending_post']) && '' !== $_POST['trending_post']) {
-        $image = $_POST['trending_post'];
-        update_term_meta($term_id, 'trending_post', $image);
+        $postID = $_POST['trending_post'];
+        update_term_meta($term_id, 'trending_post', $postID);
     } else {
         update_term_meta($term_id, 'trending_post', '');
     }

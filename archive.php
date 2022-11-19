@@ -68,10 +68,10 @@ if ($countryID != 0) {
                                 <?php
                                 $postNum++;
 
-                                if ($trendingPost != '' && $trendingPost == get_the_ID()) {
+                                if (!empty($trendingPost) && $trendingPost != '' && $trendingPost == get_the_ID()) {
                                     continue;
                                 }
-                                if ($postNum == 1 && $trendingPost == ''):?>
+                                if ($postNum == 1 && (empty($trendingPost) || $trendingPost == '')):?>
                                     <div class="col-12">
                                         <a href="<?= get_permalink(get_the_ID()) ?>">
                                             <div class="top-content">
