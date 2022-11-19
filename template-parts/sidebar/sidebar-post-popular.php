@@ -11,7 +11,7 @@ if (function_exists('tg_get_posts_most_view')):
                     <li>
                         <div class="sidebar-thumb">
                             <img class="animated rollIn"
-                                 src="<?php echo get_the_post_thumbnail_url($post->ID) ?>"
+                                 src="<?php echo get_the_post_thumbnail_url($post->ID, 'thumbnail') ?>"
                                  onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
                                  alt="<?php echo $post->post_title ?>"/>
                         </div><!-- .Sidebar-thumb -->

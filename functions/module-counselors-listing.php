@@ -72,7 +72,7 @@ function getCounselorsListingArray()
         while ($the_query->have_posts()) {
             $the_query->the_post();
             $result[] = [
-                'photo' => get_the_post_thumbnail_url(),
+                'photo' => get_the_post_thumbnail_url(get_the_ID(), 'medium'),
                 'name' => get_the_title(),
                 'position' => get_post_meta(get_the_ID(), '_tg_counselor_position', true)
             ];

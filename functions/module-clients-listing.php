@@ -72,7 +72,7 @@ function getClientsListingArray()
         while ($the_query->have_posts()) {
             $the_query->the_post();
             $result[]= [
-                'logo' => get_the_post_thumbnail_url(),
+                'logo' => get_the_post_thumbnail_url(get_the_ID(), 'medium'),
                 'name' => get_the_title(),
             ];
         }

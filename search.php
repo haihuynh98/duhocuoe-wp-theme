@@ -41,7 +41,7 @@ $description = get_the_archive_description();
                                 <div class="col-sm-6 col-md-4 col-xxl-4 offset-xxl-0 item">
                                     <a href="<?= get_permalink(get_the_ID()) ?>">
                                         <img class="img-fluid crop-image-200"
-                                             src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
+                                             src="<?= get_the_post_thumbnail_url(get_the_ID(), 'medium') ?>"
                                              onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"/>
                                     </a>
                                     <h3 class="name text-overflow-3-line"><?= get_the_title() ?></h3>
