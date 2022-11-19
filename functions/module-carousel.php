@@ -73,6 +73,7 @@ function getCarouselsListingArray()
             $the_query->the_post();
             $result[]= [
                 'image' => get_the_post_thumbnail_url(get_the_ID(),'full'),
+                'image_medium_large' => get_the_post_thumbnail_url(get_the_ID(),'medium_large'),
                 'image_large' => get_the_post_thumbnail_url(get_the_ID(),'large'),
                 'name' => get_the_title(),
             ];

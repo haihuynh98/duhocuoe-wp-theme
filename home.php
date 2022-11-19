@@ -10,7 +10,7 @@ get_header();
             <div class="swiper-wrapper">
                 <?php foreach ($carousels as $carousel): ?>
                     <div class="swiper-slide">
-                        <img src="<?= $carousel['image_large'] ?>" srcset="<?php echo $carousel['image_large'] . ' 800w, ' . $carousel['image'] . ' 1000w' ?>" alt="<?= $carousel['name'] ?>">
+                        <img src="<?= $carousel['image_medium_large'] ?>" srcset="<?php echo $carousel['image_medium_large'] . ' 300w, ' . $carousel['image_large'] . ' 800w, ' . $carousel['image'] . ' 1000w' ?>" alt="<?= $carousel['name'] ?>">
                     </div>
                 <?php endforeach; ?>
             </div>
