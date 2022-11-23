@@ -51,7 +51,7 @@ if ($countryID != 0) {
                     <section class="tags-single">
                         <div class="title-container sub-title down-line">
                             <div class="title-section">
-                                <h2>Từ khóa thể thao</h2>
+                                <h2>Từ khoá</h2>
                             </div>
                         </div>
                         <div class="list-tag">
