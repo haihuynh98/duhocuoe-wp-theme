@@ -76,7 +76,6 @@ if ($pageBlog || $pagePost || $page404 || $pageLogin || $pageProducts || $pagePr
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WN5RJC2');</script>
     <!-- End Google Tag Manager -->
-    <meta name="facebook-domain-verification" content="q75wvmpa8nbdr8czdoqx981o1ty1pq" />
 
     <?php if (is_singular() && pings_open(get_queried_object())) : ?>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
