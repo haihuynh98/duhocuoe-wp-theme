@@ -5,7 +5,7 @@ if (function_exists('tg_get_posts_most_view')):
 
     <div id="sidebar-posts-popular">
         <div class="sidebar widget">
-            <h3>Nổi bật</h3>
+            <h3>Tin Nổi bật</h3>
             <ul>
                 <?php foreach ($queryPosts as $post): ?>
                     <li>
