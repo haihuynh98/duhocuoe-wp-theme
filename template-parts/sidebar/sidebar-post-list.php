@@ -1,17 +1,20 @@
 <?php
-$postLists = new WP_Query(array('category' => 97));
+
+$catDS = get_term_by('slug', 'danh-sach', 'category');
+$catDSID = 97;
+if (!empty($catDS)) {
+    $catDSID = $catDS->term_id;
+}
+$postLists = new WP_Query(array('category' => $catDSID));
 //$postLists = new WP_Query(array('cat' => 33));
 
-
 if (($country = $args['country']) != 0) {
-    $postLists = new WP_Query(array('category__and' =>  array( 97, $country)));
+    $postLists = new WP_Query(array('category__and' =>  array( $catDSID, $country)));
 }
 
 //$postLists = new WP_Query( array( 'category__and' => array( 2, 6 ) ) );
 
-if ($postLists->post_count == 0 && function_exists('tg_get_all_post')) {
-    $postLists = tg_get_all_post();
-}
+if ($postLists->post_count != 0 ):
 ?>
 
 <div id="sidebar-posts-list">
@@ -31,3 +34,5 @@ if ($postLists->post_count == 0 && function_exists('tg_get_all_post')) {
         </ul><!-- .Ul ends here -->
     </div><!-- .Widget ends here -->
 </div>
+
+<?php endif;?>

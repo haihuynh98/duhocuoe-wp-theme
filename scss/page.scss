@@ -51,7 +51,12 @@ body {
   }
 }
 
-#sidebar-posts-popular, #sidebar-posts-list {
+#sidebar-posts-popular {
+  .sidebar.widget {
+    margin-bottom: 0px;
+  }
+}
+#sidebar-posts-popular, #sidebar-posts-list  {
   margin-top: 20px;
 
   a {
