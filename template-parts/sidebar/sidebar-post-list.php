@@ -13,9 +13,9 @@ $postLists = new WP_Query(array('cat' => $catDSID));
 //}
 //$postLists = new WP_Query(array('cat' => 33));
 
-if (($country = $args['country']) != 0) {
-    $postLists = new WP_Query(array('category__and' =>  array( $catDSID, $country)));
-}
+//if (($country = $args['country']) != 0) {
+//    $postLists = new WP_Query(array('category__and' =>  array( $catDSID, $country)));
+//}
 
 //$postLists = new WP_Query( array( 'category__and' => array( 2, 6 ) ) );
 
